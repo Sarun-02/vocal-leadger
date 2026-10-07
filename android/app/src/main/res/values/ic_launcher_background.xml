@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches the icon artwork's tile colour from design-reference/vocal_ledger_icon. -->
+    <color name="ic_launcher_background">#F0F1F6</color>
+    <!-- Design token "surface". -->
+    <color name="surface">#F8F9FF</color>
+</resources>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "inverse-surface": "#213145", "surface-container-high": "#dce9ff", "surface-tint": "#3051d2", "surface-bright": "#f8f9ff", "on-primary-fixed": "#001355", "on-background": "#0b1c30", "surface-container-lowest": "#ffffff", "tertiary": "#8c0024", "tertiary-fixed": "#ffdada", "on-tertiary-fixed": "#40000b", "primary-container": "#2c4ecf", "inverse-primary": "#b8c3ff", "inverse-on-surface": "#eaf1ff", "on-tertiary": "#ffffff", "primary-fixed": "#dde1ff", "on-secondary-fixed": "#00210e", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#00522b", "on-error-container": "#93000a", "on-primary-container": "#cad1ff", "surface-dim": "#cbdbf5", "secondary-container": "#7ff8a8", "surface-container": "#e5eeff", "on-tertiary-container": "#ffc5c6", "outline-variant": "#c4c5d7", "primary": "#0033b6", "on-error": "#ffffff", "secondary-fixed-dim": "#64dd91", "background": "#f8f9ff", "surface-variant": "#d3e4fe", "outline": "#747686", "primary-fixed-dim": "#b8c3ff", "on-secondary": "#ffffff", "secondary-fixed": "#82faab", "on-primary-fixed-variant": "#0636ba", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#910526", "tertiary-container": "#ae2239", "on-surface-variant": "#444654", "surface-container-highest": "#d3e4fe", "surface": "#f8f9ff", "on-secondary-container": "#00723d", "secondary": "#006d3a", "tertiary-fixed-dim": "#ffb3b5", "error": "#ba1a1a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-desktop": "3rem", "space-xs": "0.25rem", "margin": "1rem", "margin-tablet": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "gutter-tablet": "1.5rem", "gutter": "1rem" }, fontFamily: { "title-md": ["Roboto Flex"], "label-sm": ["Roboto Flex"], "body-md": ["Roboto Flex"], "headline-sm": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-lg": ["Roboto Flex"], "body-lg": ["Roboto Flex"], "body-sm": ["Roboto Flex"], "display-lg-mobile": ["Roboto Flex"], "display-lg": ["Roboto Flex"], "label-md": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "title-lg": ["Roboto Flex"], "title-sm": ["Roboto Flex"] }, fontSize: { "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400" }], "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "0px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": "400" }], "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.2px", "fontWeight": "500" }], "display-lg": ["57px", { "lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0px", "fontWeight": "600" }], "title-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between px-margin h-6 pt-1 text-on-surface-variant"><span class="font-label-sm text-label-sm">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface hover:text-primary transition-colors rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Vocal Ledger Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApwKrcG5UM1hucs8w0mlMqQFIe2tJtsSgs_Q7pIyJbA7ySeAMtGIj7K_s9s621VtxwSLdQnczVHc2RwhOAHYK__BSMWK60_FUMcTUANCqktItu2lat9HMgYBSTQT7v6TjYsaZTIIPbQmBgGJJqSqtRGYr1gPZ9wU7qqBvPU1pZaz1IyOj4plgoMx9gOUbgnLJoqZgf8EnPy7nLKO7VcgskNKrwyp2Jy__u84qX0qidNDoYp9jKVRKM"/><h1 class="font-title-lg text-title-lg text-on-surface font-semibold">Transaction Review</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full relative pb-28">
+<!-- Interactive Feedback Pill / Audio Recognition Badge -->
+<div class="px-margin pt-space-sm mb-space-sm flex items-center justify-between">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-md py-1 rounded-full text-primary">
+<span class="material-symbols-outlined text-[16px] animate-pulse">mic</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide uppercase">Voice Captured • 3 Items</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span>
+      Parsed successfully
+    </span>
+</div>
+<!-- Instruction Banner -->
+<div class="px-margin mb-space-md">
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Review and edit the detected transactions before saving.
+    </p>
+</div>
+<!-- List of Detected Transaction Cards -->
+<div class="px-margin flex flex-col gap-space-md" id="transaction-card-list">
+<!-- Card 1: Dinner -->
+<div class="transaction-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative transition-all duration-200" id="tx-card-1">
+<div class="flex items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 group cursor-pointer" onclick="editField('desc-1')">
+<span class="font-title-md text-title-md text-on-surface truncate" id="desc-1-text">Dinner</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-colors">edit</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-medium">Expense</span>
+<span class="text-outline text-label-sm">•</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-0.5" onclick="editField('cat-1')">
+<span id="cat-1-text">Food &amp; Dining</span>
+<span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-baseline gap-0.5 bg-surface-container-low px-space-sm py-1 rounded-lg cursor-pointer hover:bg-surface-container transition-colors" onclick="editAmount('amt-1')">
+<span class="font-title-sm text-title-sm text-tertiary">₹</span>
+<span class="font-headline-sm text-headline-sm text-tertiary tabular-nums font-semibold" id="amt-1-val">14</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary ml-0.5 opacity-60">edit</span>
+</div>
+</div>
+</div>
+<!-- Footer Row: Date & Action Icons -->
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-bright rounded-lg px-space-sm py-1.5">
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors" onclick="editField('date-1')">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-body-sm text-body-sm" id="date-1-text">Today (Oct 5, 2026)</span>
+</button>
+<div class="flex items-center gap-1">
+<button aria-label="Edit transaction" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-all" onclick="toggleQuickEdit('tx-card-1')">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button aria-label="Delete transaction" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-error-container/40 transition-all" onclick="deleteCard('tx-card-1')">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Lunch -->
+<div class="transaction-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative transition-all duration-200" id="tx-card-2">
+<div class="flex items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">lunch_dining</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 group cursor-pointer" onclick="editField('desc-2')">
+<span class="font-title-md text-title-md text-on-surface truncate" id="desc-2-text">Lunch</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-colors">edit</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-medium">Expense</span>
+<span class="text-outline text-label-sm">•</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-0.5" onclick="editField('cat-2')">
+<span id="cat-2-text">Food &amp; Dining</span>
+<span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-baseline gap-0.5 bg-surface-container-low px-space-sm py-1 rounded-lg cursor-pointer hover:bg-surface-container transition-colors" onclick="editAmount('amt-2')">
+<span class="font-title-sm text-title-sm text-tertiary">₹</span>
+<span class="font-headline-sm text-headline-sm text-tertiary tabular-nums font-semibold" id="amt-2-val">14</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary ml-0.5 opacity-60">edit</span>
+</div>
+</div>
+</div>
+<!-- Footer Row: Date & Action Icons -->
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-bright rounded-lg px-space-sm py-1.5">
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors" onclick="editField('date-2')">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-body-sm text-body-sm" id="date-2-text">Today (Oct 5, 2026)</span>
+</button>
+<div class="flex items-center gap-1">
+<button aria-label="Edit transaction" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-all" onclick="toggleQuickEdit('tx-card-2')">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button aria-label="Delete transaction" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-error-container/40 transition-all" onclick="deleteCard('tx-card-2')">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Petrol -->
+<div class="transaction-item bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative transition-all duration-200" id="tx-card-3">
+<div class="flex items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-1 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 group cursor-pointer" onclick="editField('desc-3')">
+<span class="font-title-md text-title-md text-on-surface truncate" id="desc-3-text">Petrol</span>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary transition-colors">edit</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-medium">Expense</span>
+<span class="text-outline text-label-sm">•</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-0.5" onclick="editField('cat-3')">
+<span id="cat-3-text">Transportation / Fuel</span>
+<span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-baseline gap-0.5 bg-surface-container-low px-space-sm py-1 rounded-lg cursor-pointer hover:bg-surface-container transition-colors" onclick="editAmount('amt-3')">
+<span class="font-title-sm text-title-sm text-tertiary">₹</span>
+<span class="font-headline-sm text-headline-sm text-tertiary tabular-nums font-semibold" id="amt-3-val">14</span>
+<span class="material-symbols-outlined text-[14px] text-tertiary ml-0.5 opacity-60">edit</span>
+</div>
+</div>
+</div>
+<!-- Footer Row: Date & Action Icons -->
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-bright rounded-lg px-space-sm py-1.5">
+<button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors" onclick="editField('date-3')">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-body-sm text-body-sm" id="date-3-text">Today (Oct 5, 2026)</span>
+</button>
+<div class="flex items-center gap-1">
+<button aria-label="Edit transaction" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container transition-all" onclick="toggleQuickEdit('tx-card-3')">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button aria-label="Delete transaction" class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-error-container/40 transition-all" onclick="deleteCard('tx-card-3')">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Total Summary Chip Strip -->
+<div class="px-margin mt-space-lg flex items-center justify-between py-space-sm bg-surface-container-low rounded-xl px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">receipt_long</span>
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Batch Total</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-title-sm text-title-sm text-on-surface-variant">Expense:</span>
+<span class="font-title-md text-title-md text-tertiary font-bold" id="batch-total">₹42</span>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md pb-safe pt-space-sm px-margin shadow-[0_-4px_16px_rgba(15,23,42,0.06)]">
+<div class="flex flex-col gap-space-xs max-w-lg mx-auto pb-space-sm">
+<button class="w-full h-12 bg-primary text-on-primary rounded-full font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" id="save-button" onclick="confirmSave()">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span id="save-button-text">Confirm &amp; Save (3 Transactions)</span>
+</button>
+<button class="w-full h-11 bg-transparent text-on-surface-variant hover:text-on-surface rounded-full font-label-lg text-label-lg font-medium flex items-center justify-center transition-colors" onclick="cancelReview()">
+        Cancel
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function updateBatchSummary() {
+    const cards = document.querySelectorAll('.transaction-item');
+    const count = cards.length;
+    let sum = 0;
+
+    cards.forEach(card => {
+      const valEl = card.querySelector('[id$="-val"]');
+      if (valEl) {
+        sum += parseFloat(valEl.innerText) || 0;
+      }
+    });
+
+    const totalEl = document.getElementById('batch-total');
+    if (totalEl) totalEl.innerText = '₹' + sum;
+
+    const btnText = document.getElementById('save-button-text');
+    const saveBtn = document.getElementById('save-button');
+    if (btnText && saveBtn) {
+      if (count === 0) {
+        btnText.innerText = 'No Transactions Left';
+        saveBtn.disabled = true;
+        saveBtn.classList.add('opacity-50', 'pointer-events-none');
+      } else {
+        btnText.innerText = `Confirm & Save (${count} Transaction${count > 1 ? 's' : ''})`;
+        saveBtn.disabled = false;
+        saveBtn.classList.remove('opacity-50', 'pointer-events-none');
+      }
+    }
+  }
+
+  function editAmount(id) {
+    const el = document.getElementById(id + '-val');
+    if (!el) return;
+    const current = el.innerText;
+    const newVal = prompt('Edit amount (₹):', current);
+    if (newVal !== null && !isNaN(newVal) && newVal.trim() !== '') {
+      el.innerText = newVal.trim();
+      updateBatchSummary();
+    }
+  }
+
+  function editField(idPrefix) {
+    const el = document.getElementById(idPrefix + '-text');
+    if (!el) return;
+    const current = el.innerText;
+    const label = idPrefix.startsWith('desc') ? 'Description' : (idPrefix.startsWith('cat') ? 'Category' : 'Date');
+    const newVal = prompt(`Edit ${label}:`, current);
+    if (newVal !== null && newVal.trim() !== '') {
+      el.innerText = newVal.trim();
+    }
+  }
+
+  function toggleQuickEdit(cardId) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+    card.classList.add('bg-surface-container-high');
+    setTimeout(() => {
+      card.classList.remove('bg-surface-container-high');
+    }, 300);
+  }
+
+  function deleteCard(cardId) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+    if (confirm('Discard this transaction?')) {
+      card.style.opacity = '0';
+      card.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        card.remove();
+        updateBatchSummary();
+      }, 200);
+    }
+  }
+
+  function confirmSave() {
+    const count = document.querySelectorAll('.transaction-item').length;
+    if (count === 0) return;
+    alert(`Successfully recorded ${count} transaction${count > 1 ? 's' : ''} to your ledger!`);
+    if (window.history.length > 1) {
+      window.history.back();
+    }
+  }
+
+  function cancelReview() {
+    if (confirm('Are you sure you want to cancel? Voice transactions will not be saved.')) {
+      window.history.back();
+    }
+  }
+</script></main></body></html>

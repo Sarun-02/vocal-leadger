@@ -1,0 +1,148 @@
+@import '@fontsource-variable/roboto-flex/index.css';
+@import 'material-symbols/outlined.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── From the design export's <style> block ─────────────────────────── */
+@layer base {
+  :root {
+    /* Capacitor SystemBars injects --safe-area-inset-*; env() covers browsers. */
+    --sat: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+    --sab: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+    --sal: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
+    --sar: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
+    --header-h: 3.5rem;
+    --nav-h: 4rem;
+  }
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    overscroll-behavior: none;
+    min-height: 100dvh;
+    padding-left: var(--sal);
+    padding-right: var(--sar);
+    font-feature-settings: 'tnum' 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  input,
+  textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+  /* Number inputs: hide spinners (design shows a plain large figure). */
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: var(--sab);
+  }
+  .pt-safe {
+    padding-top: var(--sat);
+  }
+  /* Main content offset below the fixed header (design: pt-20 incl. the mock status bar). */
+  .pt-header {
+    padding-top: calc(var(--sat) + var(--header-h));
+  }
+  /* Main content offset above the fixed bottom nav (design: pb-24). */
+  .pb-nav {
+    padding-bottom: calc(var(--sab) + 6rem);
+  }
+  .bottom-nav-offset {
+    bottom: calc(var(--sab) + 5rem);
+  }
+  .top-header {
+    top: calc(var(--sat) + var(--header-h));
+  }
+  .toast-offset {
+    bottom: calc(var(--sab) + 9rem);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+  .icon-fill {
+    font-variation-settings: 'FILL' 1;
+  }
+}
+
+/* Hide the bottom navigation and floating actions while the keyboard is open. */
+body.keyboard-open .hide-on-keyboard {
+  display: none !important;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-toast-in {
+  animation: toast-in 180ms ease-out;
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-sheet-in {
+  animation: sheet-in 200ms ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 160ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

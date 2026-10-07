@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+
+# Android build outputs and local machine config
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/capacitor-cordova-android-plugins/build/
+
+# Release signing material — never commit
+android/keystore.properties
+*.jks
+*.keystore
+
+.idea/
+.DS_Store
+
+# Local tooling
+*.tsbuildinfo
+.claude/settings.local.json
